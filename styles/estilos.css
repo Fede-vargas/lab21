@@ -63,10 +63,10 @@ p{
     width: 50px;
     display: flex;
     flex-direction: row;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .iconoInstagram{
-    padding-left: 50px;
+    padding-left: 55px;
     padding-right: 5px;
 }
 .imageBanner:hover{
