@@ -1,0 +1,28 @@
+footer {
+    background-color: #D9D0C5 !important;
+    position: relative;
+    border-top: 1px solid rgba(166, 146, 134, 1); 
+    margin-top: 80px !important;
+   
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+

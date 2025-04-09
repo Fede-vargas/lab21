@@ -1,0 +1,23 @@
+
+@mixin boton-estilo($color, $borde: 2px) {
+    padding: 0.5rem 1.5rem;
+    border: $borde solid $color;
+    background: transparent;
+    color: $color;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      background-color: $color;
+      color: $color-fondo;
+    }
+  }
+  
+  @mixin titulo-principal {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+  

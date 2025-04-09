@@ -1,0 +1,62 @@
+@use "../../scss/utilities/variables";
+@use "../../scss/utilities/mixins";
+.navbar {
+    position: relative;
+    padding: 10px 20px;
+  }
+  
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .logo-navbar {
+    height: 50px; 
+  }
+  
+  .navbar-nav {
+    margin-left: 0;
+  }
+  .navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030; 
+  }
+  .navbar.custom-navbar {
+    background-color: color-fondo !important;
+    border-bottom: 1px solid color-acento;
+    box-shadow: 0 0,5px 1px rgba($color: #A69286, $alpha: 1.0);
+    opacity: 0.8 !important;
+  }
+
+  .navbar.custom-navbar2 {
+    background-color: #D9D0C5  !important;
+    border-bottom: 1px solid color-acento;
+    box-shadow: 0 0,5px 1px rgba($color: #A69286, $alpha: 1.0);
+    opacity: 0.8 !important;
+  }
+
+  .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: color-acento;
+      transition: width 0.3s ease;
+    }
+  
+    &:hover::after {
+      width: 100%;
+    }
+  }
+  
+  
